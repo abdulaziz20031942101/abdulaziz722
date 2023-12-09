@@ -1,0 +1,305 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;500;900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style-type: none;
+    text-decoration: none;
+    list-style-type: none;
+    text-decoration: none;
+}
+html {
+    scroll-behavior: smooth;
+  }
+body{
+    font-family: 'Roboto', sans-serif;
+}
+ 
+.header{
+    width: 100%;
+    height: 110vh;
+    background-image: url(./images/Ways-to-get-in-the-media.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}  
+
+.header::after{
+    content: " ";
+    position: absolute;
+    width: 100%;
+    height: 100vh; 
+    background-color: rgba(0, 0, 0, 0.4);
+   
+
+}
+nav{
+    padding:0px 60px;
+    display: flex;
+    position: relative;
+    justify-content: space-between;
+    width: 100%;
+    height: 60px;
+    background-color: aqua;
+    align-items: center;
+    cursor: pointer;
+    background-color:rgba(0, 0, 0, 0.5);
+    z-index: 1;
+}
+.navbar ul{
+    gap: 30px;
+    display: flex;
+    
+}
+nav .logo{
+font-size: 30px;
+color: white;
+
+}
+.navbar ul li a{
+    font-size: 20px;
+    color: white;
+    transition: all 0.3s;
+}
+
+.navbar ul li a:hover{
+    color: orange;
+    
+}
+
+
+#bars{
+color: white;
+font-size: 25px;
+display:none ; 
+}  
+
+.header-text{
+  position: absolute;
+  transform:translate(-50%, -50%) ;
+  left: 50%;
+  top: 50%;
+  text-align: center;
+  color: white;
+  z-index: 1;
+}
+.header-text h1{
+    font-size: 45px;
+}
+.header-text p{
+    font-size: 20px;
+    margin: 30px 0px;
+    line-height: 25px;
+}
+.header-text button{
+    outline: none;
+    border: none;
+    max-width: 200px;
+    height: 50px;
+    width: 100%;
+    border-radius: 30px;
+    font-size: 20px;
+    font-weight: 600;
+    transition: 0.3s;
+}
+.header-text button:hover{
+    background-color:rgba(0, 0, 0, 0.5);
+    color: white;
+    border: 2px solid white;
+    
+}
+
+
+/* Our services */
+.title{
+    font-size: 30px;
+    text-align: center;
+    margin: 60px;
+    font-weight: 600;
+}
+.services-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 30px;
+
+}
+.services-box-item{
+    width: 300px;
+    text-align: center;
+}
+.services-box-item img{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+}
+.services-box-item h1{
+    font-size: 20px;
+    margin: 15px;
+
+}
+.services-box-item p{
+    font-size: 15px;
+    line-height: 22px;
+}
+/* Our services */
+
+/* About */
+.about{
+    text-align: center;
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+}
+.about .about-img img{
+    width: 100%;
+    max-width: 800px;
+}
+.about .about-description{
+    font-size: 14px;
+    line-height: 25px;
+    margin: 30px 0px;
+}
+
+/* About */
+
+/* contact  */
+
+.contact{
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+}
+.contact .about-description{
+    text-align: center;
+    font-size: 14px;
+    line-height: 25px;
+    margin: 30px 0px;
+
+
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 500px;
+    margin: 50px auto;
+    gap: 25px;
+    padding: 0px 10px;
+
+}
+form input{
+    font-size: 16px;
+    padding: 0px 10px;
+    border: none;
+    outline: none;
+    height: 50px;
+    background-color: rgb(235, 235, 235);
+}
+form textarea{
+    font-size: 16px;
+    padding: 10px 10px;
+    border: none;
+    outline: none;
+    background-color: rgb(235, 235, 235);   
+    height: 100px;
+}
+.form-btn{
+    background-color: blue;
+    color: white;
+    border: none;
+    outline: none;
+    height: 40px;
+    border-radius: 30px;
+    font-size: 18px;
+    transition: 0.2s;
+    font-weight: 500;
+
+}
+
+.form-btn:hover{
+    background-color: rgb(241, 59, 226);
+    color: black;
+    transition: 0.2s;
+}
+
+
+/* contact  */
+
+/* footer  */
+.footer-text{
+    font-size: 16px;
+    background-color: blue;
+    color: white;
+    text-align: center;
+    padding: 10px 0px;
+
+}
+/* footer  */
+
+
+
+
+
+
+
+
+
+@media screen and (max-width:768px){
+
+ 
+#bars{
+color: white;
+display: block;  
+} 
+nav{
+    position: relative;
+    z-index: 2;
+    padding: 0px 30px;
+}
+.navbar ul{
+    padding-top: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    position: absolute;
+    z-index: 1;
+    top: 60px;
+    left: -100%;
+    background-color:rgba(0, 0, 0, 1);
+     width: 100%;
+    height: calc(100vh - 60px);
+    transition: 0.3s;
+}
+.navbar .click{
+    left: 0;
+    transition: 1s;
+}
+.header-text h1{
+    font-size: 45px;
+}
+.header-text p{
+    font-size: 10px;
+    margin: 30px 0px;
+    line-height: 25px;
+    width: 300px;
+}
+.header-text button{
+    outline: none;
+    border: none;
+    max-width: 180px;
+    height: 40px;
+    width: 100%;
+    border-radius: 30px;
+    font-size: 15px;
+    
+}
+
+} 
+
+
+
+
